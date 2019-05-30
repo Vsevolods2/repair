@@ -115,6 +115,7 @@ img {
   font-weight: 600;
   line-height: 55px;
   margin-bottom: 35px;
+  font-family: 'Museo Sans 300 Light';
 }
 
 .hero-text__subtitle {
@@ -194,5 +195,13 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
+}
+
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("../fonts/MuseoSansCyrl/");
+  src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
