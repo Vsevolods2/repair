@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url("../fonts/MuseoSansCyrl/");
+  src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: url("../fonts/MuseoSansCyrl/");
+  src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: +reg;
+  font-family: 'Museo Sans 300 Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -69,16 +86,16 @@ img {
 
 .navbar__button {
   margin-left: 30px;
-  width: 170px;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 400;
   text-decoration: none;
   margin-top: 10px;
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -112,10 +129,10 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 600;
   line-height: 55px;
   margin-bottom: 35px;
-  font-family: 'Museo Sans 300 Light';
+  font-family: 'Museo Sans 700 Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
@@ -195,21 +212,5 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
-}
-
-@font-face {
-  font-family: 'Museo Sans 300 Light';
-  src: url("../fonts/MuseoSansCyrl/");
-  src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans 700 Bold';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
