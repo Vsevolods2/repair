@@ -48,6 +48,11 @@ img {
   padding: 18px 30px;
 }
 
+.button:honor {
+  background-color: #ffe466;
+  cursor: pointer;
+}
+
 .navbar {
   padding: 8px 0;
 }
@@ -88,7 +93,6 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
-  cursor: pointer;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
