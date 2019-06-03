@@ -1,5 +1,5 @@
 .offer
-    background: url('../img/offer/offer-bg.png')
+    background: url('../img/offer/offer-bg.png') no-repeat
     background-position: center right
     background-size: contain
     position: relative
@@ -25,8 +25,30 @@
     &__input
         margin-bottom: 30px
         width: 240px
+        height: 65px
         &:first-child
             margin-right: 10px
     &__button
         width: 100%
         min-width: 70px
+        height: 70px
+        +bold
+    &-contacts
+        display: flex
+        padding-top: 30px
+        line-height: 1.4
+        
+@media (max-width: 1200px)
+    .offer
+        background-size: cover 
+        &__input
+            width: 100%
+            margin-bottom: 10px
+        &__button
+            font-size: 13px
+@media (max-width: 768px)
+    .offer
+        background: #ffffff
+        &-block
+            width: 100%
+            padding-right: 0
