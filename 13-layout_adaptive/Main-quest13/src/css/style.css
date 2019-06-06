@@ -22,6 +22,7 @@
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
+  font-size: 14px;
 }
 
 img {
@@ -234,11 +235,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .hero-list__text {
   max-width: 300px;
+  line-height: 1.7;
 }
 
 @media (max-width: 1200px) {
@@ -274,6 +276,12 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-list__text {
+    line-height: 1.1;
   }
 }
 
@@ -327,14 +335,26 @@ img {
   height: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .offer-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 30px;
-  line-height: 1.4;
+  line-height: 1.8;
+}
+
+.offer-text {
+  font-size: 15px;
+}
+
+.offer-phone {
+  max-width: 200px;
 }
 
 @media (max-width: 1200px) {
