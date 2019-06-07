@@ -19,6 +19,7 @@
         line-height: 35px
         margin-bottom: 24px
         text-align: left
+        max-width: 350px
     &__subtitle
         max-width: 250px
         margin-bottom: 30px
@@ -37,13 +38,14 @@
     &-contacts
         display: flex
         justify-content: space-between
-        padding-top: 30px
-        line-height: 1.8
-    &-text
+        padding-top: 25px
+        line-height: 1.7
         font-size: 15px
-    &-phone
-        max-width: 200px
-        
+        padding-right: 10px
+    &__phone
+        text-decoration: none
+        +bold
+        color: $text-color    
 @media (max-width: 1200px)
     .offer
         background-size: cover 

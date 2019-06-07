@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Ремонт квартир</title>
 </head>
 <body>
 
@@ -95,7 +96,7 @@
               </span>
             </div>
             <div class="offer-phone">
-              или позвоните нам сами
+              или перезвоните нам сами<br>
               <a href="tel:+7(495)42-251-31" class="offer__phone">+7 (495) 42-251-31</a>
             </div>
           </div>
@@ -151,7 +152,7 @@
         </span>
         <!-- /.section-subtitle price__subtitle -->
         <div class="cards">
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/bathroom.jpg" alt="Ванная комната"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -163,7 +164,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/rooms.jpg" alt="Комната"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -175,7 +176,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/office.jpg" alt="Офис"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -187,7 +188,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/newbuilding.jpg" alt="Новостройка"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -199,7 +200,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/kitchen.jpg" alt="Кухня"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -211,7 +212,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card price__card wow fadeInUp">
             <div class="card__image"><img src="img/price/cottage.jpg" alt="Коттедж"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -251,8 +252,13 @@
   <script src="js/modal.js"></script>
   
   <script src="js/slick.min.js"></script>
-  
+
+  <script src="js/wow.min.js"></script>
+
   <script>
+    // инициализация WOW.js
+    new WOW().init();
+    // скрипт для слайдера
     $(document).ready(function(){
       $('.slider').slick({
         slidesToShow: 3,
