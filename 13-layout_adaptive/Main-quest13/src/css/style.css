@@ -397,14 +397,16 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
+  max-width: 800px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  line-height: 45px;
+  font-size: 30px;
 }
 
 .portfolio__arrows {
   max-width: 120px;
-  margin: 68px auto;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,6 +417,7 @@ img {
 
 .slider__image {
   margin: auto;
+  padding: 15px;
 }
 
 .price__title {
