@@ -399,6 +399,7 @@ img {
 .portfolio__title {
   max-width: 800px;
   margin: auto;
+  margin-top: 100px;
   margin-bottom: 80px;
   line-height: 45px;
   font-size: 30px;
