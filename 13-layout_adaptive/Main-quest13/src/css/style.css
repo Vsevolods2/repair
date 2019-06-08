@@ -605,9 +605,16 @@ img {
 @media (max-width: 1200px) {
   .step {
     margin-bottom: 30px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
-  .stepafter {
+  .step:after {
     display: none;
+  }
+  .steps-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
