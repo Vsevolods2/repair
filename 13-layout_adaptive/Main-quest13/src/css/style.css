@@ -529,6 +529,7 @@ img {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   text-align: center;
+  position: relative;
 }
 
 .step:after {
@@ -536,7 +537,7 @@ img {
   width: 72px;
   height: 25px;
   position: absolute;
-  background: url("..img/steps/arrow.png") no-repeat center;
+  background: url("../img/steps/arrow.png") no-repeat center;
   top: -10px;
   right: -15%;
 }
