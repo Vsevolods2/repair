@@ -8,9 +8,22 @@
     &__interview
         flex-basis: 50%
     &__form
+        position: relative
         flex-basis: 50%
         padding-left: 200px
         text-align: center
+        #name-error
+            position: absolute
+            right: 0
+            margin: 60px 230px
+        #phone-error
+            position: absolute
+            right: 0
+            margin: 60px 205px
+        #email-error
+            position: absolute
+            right: 0
+            margin: 60px 220px
     &__button
         display: block
         height: 70px
@@ -53,7 +66,7 @@
             border-radius: 50%
             border: 2px solid $text-color
             font-size: 14px
-            &:nth-child(1)
+            &:first-child
         &__text
             max-width: 400px
 .form

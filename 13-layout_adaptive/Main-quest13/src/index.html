@@ -84,9 +84,9 @@
           <span class="section-subtitle offer__subtitle">
             Оставьте заявку на разработку бесплатного дизайн-проект!
           </span>
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tel" class="input offer__input" placeholder="Ваш телефон">
+          <form action="#" class="form offer__form" id="offer-form">
+            <input type="text" name="name" class="input offer__input" placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button wow flipInX" data-wow-delay="0.1s">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="offer-contacts">
@@ -323,7 +323,7 @@
               <input type="text" name="name" class="input brif__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
               <input type="email" name="email" class="input brif__input" placeholder="Ваша почта">
-              <button class="button brif__button">Узнать стоимость</button>
+              <button class="button brif__button wow flipInX" data-wow-delay="0.1s">Узнать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
               <!-- /.button brif__button -->
             </form>
@@ -441,10 +441,36 @@
         email: {
           required: 'Укажите Ваш e-mail'
           },
+        errorClass: "brif-error",
       }
+    });
+
+    $('#offer-form').validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 15,
+        },
+        phone: { 
+          required: true,
+          phone: true,
+        },
+      },
+      messages: {
+        name: {
+          required: "Укажите Ваше имя",
+          minlength: jQuery.validator.format("Нужно {0} знака")
+          },
+        phone: {
+          required: "Укажите Ваш телефон",
+          },
+        },
+        errorClass: "offer-error",
     });
     // скрипт для маски поля телефона
     $('.phone').mask('+7 (999) 999 99-99')
+
     // скрипт для слайдера
       $('.slider').slick({
         slidesToShow: 3,

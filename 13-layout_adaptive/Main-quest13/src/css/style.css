@@ -322,6 +322,18 @@ img {
   position: relative;
 }
 
+.offer-block #name-error {
+  position: absolute;
+  left: 0;
+  margin-top: 70px;
+}
+
+.offer-block #phone-error {
+  position: absolute;
+  right: 0;
+  margin: 70px 185px;
+}
+
 .offer__title {
   line-height: 35px;
   margin-bottom: 24px;
@@ -652,10 +664,29 @@ img {
 }
 
 .brif__form {
+  position: relative;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 200px;
   text-align: center;
+}
+
+.brif__form #name-error {
+  position: absolute;
+  right: 0;
+  margin: 60px 230px;
+}
+
+.brif__form #phone-error {
+  position: absolute;
+  right: 0;
+  margin: 60px 205px;
+}
+
+.brif__form #email-error {
+  position: absolute;
+  right: 0;
+  margin: 60px 220px;
 }
 
 .brif__button {

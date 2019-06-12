@@ -15,6 +15,14 @@
         width: 50%
         padding-right: 90px
         position: relative
+        #name-error
+            position: absolute
+            left: 0
+            margin-top: 70px
+        #phone-error
+            position: absolute
+            right: 0
+            margin: 70px 185px
     &__title
         line-height: 35px
         margin-bottom: 24px
@@ -46,7 +54,7 @@
         display: inline-block
         text-decoration: none
         +bold
-        color: $text-color    
+        color: $text-color
 @media (max-width: 1200px)
     .offer
         background-size: cover 
