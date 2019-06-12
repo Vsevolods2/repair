@@ -320,9 +320,9 @@
             <h3 class="form__title">Оставьте заявку на бесплатный расчёт ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
             <form action="#" id="brif-form">
-              <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
-              <input type="tel" class="input brif__input phone" placeholder="Ваш телефон">
-              <input type="email" class="input brif__input" placeholder="Ваша почта">
+              <input type="text" name="name" class="input brif__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+              <input type="email" name="email" class="input brif__input" placeholder="Ваша почта">
               <button class="button brif__button">Узнать стоимость</button>
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
               <!-- /.button brif__button -->
@@ -336,6 +336,7 @@
     </section>
     <!-- /.section brig -->
   </main>
+
     <footer class="footer">
       <div class="map" id="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A418b31a9a2e3809bbd5092ab76b348ffab6bd7ab903a2608c232398f2fb85e87&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -411,40 +412,41 @@
   <script>
     // инициализация WOW.js
     new WOW().init();
+    $(document).ready(function(){
     // скрипт валидации формы
-    $('#brif-form').validate({
+    $("#brif-form").validate({
       rules: {
-        username: {
+        name: {
           required: true,
+          name: true,
           minlength: 2,
-          maxlength: 15
+          maxlength: 15,
         },
         phone: { 
           required: true,
-          phone: true
+          phone: true,
         },
         email: {
           required: true,
-          email: true
+          email: true,
         },
       },
       messages: {
-        username: {
+        name: {
           required: "Укажите Ваше имя",
-          minlength: jQuery.validator.format("Осталось символов: {0}")
-        },
+          minlength: jQuery.validator.format("Не менее {0} символов")
+          },
         phone: {
-          required: "Укажите Ваш телефон",
-        },
+          required: 'Укажите Ваш телефон'
+          },
         email: {
-          required: "Укажите Ваш e-mail"
-        }
+          required: 'Укажите Ваш e-mail'
+          },
       }
     });
     // скрипт для маски поля телефона
     $('.phone').mask('+7 (999) 999 99-99')
     // скрипт для слайдера
-    $(document).ready(function(){
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
