@@ -414,11 +414,10 @@
     new WOW().init();
     $(document).ready(function(){
     // скрипт валидации формы
-    $("#brif__form").validate({
+    $('#brif-form').validate({
       rules: {
         name: {
           required: true,
-          name: true,
           minlength: 2,
           maxlength: 15,
         },
@@ -434,7 +433,7 @@
       messages: {
         name: {
           required: "Укажите Ваше имя",
-          minlength: jQuery.validator.format("{0} символ")
+          minlength: jQuery.validator.format("Нужно {0} знака")
           },
         phone: {
           required: 'Укажите Ваш телефон'
