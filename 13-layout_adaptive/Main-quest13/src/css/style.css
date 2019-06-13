@@ -385,6 +385,17 @@ img {
   .container {
     width: 760px;
   }
+  .section__title {
+    font-size: 20px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    max-width: 500px;
+  }
+  .section__subtitle {
+    display: block;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -716,8 +727,11 @@ img {
   .hero-list {
     margin-bottom: 44px;
   }
-  .hero-text {
-    padding-right: 10px;
+  .hero-text__title {
+    font-size: 30px;
+  }
+  .hero-text__subtitle {
+    font-size: 18px;
   }
 }
 
@@ -743,8 +757,14 @@ img {
 }
 
 @media (max-width: 320px) {
+  .hero {
+    padding: 20px 0;
+  }
+  .hero-text__title {
+    line-height: 1.2;
+  }
   .hero-list__text {
-    line-height: 1.1;
+    line-height: 1.2;
   }
 }
 
@@ -839,12 +859,21 @@ img {
   .offer {
     background-size: cover;
   }
+  .offer__title {
+    font-size: 20px;
+  }
+  .offer__subtitle {
+    font-size: 15px;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .offer-contacts {
+    font-size: 12px;
   }
 }
 
@@ -866,7 +895,7 @@ img {
 .portfolio__title {
   max-width: 800px;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 40px;
   margin-bottom: 80px;
   line-height: 45px;
   font-size: 30px;
@@ -886,6 +915,12 @@ img {
 .slider__image {
   margin: auto;
   padding: 15px;
+}
+
+@media (max-width: 1200px) {
+  __title {
+    font-size: 22px;
+  }
 }
 
 .price {
@@ -991,6 +1026,15 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .price__title {
+    font-size: 26px;
+  }
+  .price__subtitle {
+    font-size: 16px;
+  }
 }
 
 .step {

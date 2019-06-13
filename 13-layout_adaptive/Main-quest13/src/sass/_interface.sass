@@ -10,6 +10,15 @@ img
 @media (max-width: 1200px)
      .container
           width: 760px
+     .section
+          &__title
+               font-size: 20px
+               +bold
+               text-align: center
+               max-width: 500px
+          &__subtitle
+               display: block
+               font-size: 16px
 @media (max-width: 768px)
      .container
           max-width: 580px
@@ -47,5 +56,4 @@ img
 .arrows
      &__left, &__right
           &:hover
-               cursor: pointer
-          
+               cursor: pointer 
