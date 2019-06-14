@@ -75,15 +75,14 @@
             max-width: 400px
 .form
     &__title
-        // margin-top: 15px
-        // padding: 0 0 20px 20px
+        padding: 0 0 20px 20px
         line-height: 33px
         font-size: 22px
         +bold
     &__subtitle
+        padding: 0 0 20px 15px
         display: block
         font-size: 16px
-        // padding: 0 0 20px 15px
 @media (max-width: 1200px)
     .brif
         &__form
@@ -98,8 +97,8 @@
             margin-bottom: 30px
             font-size: 14px
         &-list
-            font-size: 16px
             &__text
+                font-size: 16px
                 max-width: 300px
         &__counter
             margin-right: 20px
@@ -117,5 +116,17 @@
         background-repeat: repeat-x, no-repeat
         &-block
             flex-direction: column
-        &__form
-            margin-bottom: 80px
+@media (max-width: 320px)
+    .interview
+        padding-right: 0
+        &__title
+            font-size: 18px
+            line-height: 1.2
+            margin-top: -11px
+        &__subtitle
+            width: 190px
+        &-list
+            &__text
+                width: 205px
+                font-size: 14px
+                line-height: 1.2

@@ -34,7 +34,7 @@ gulp.task('move-fonts', function(done) {
 });
 
 gulp.task('tinypng', function(done) {
-    gulp.src('./13-layout_adaptive/Main-quest13/src/img/**/*.{png,jpg,jpeg}')
+    gulp.src('./13-layout_adaptive/Main-quest13/src/img/**/*')
         .pipe(tinyPNG({
             key: '',
         }))
