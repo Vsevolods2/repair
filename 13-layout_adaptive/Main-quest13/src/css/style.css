@@ -1403,11 +1403,6 @@ img {
   margin-bottom: 15px;
 }
 
-.interview {
-  margin-top: -6px;
-  margin-left: -3px;
-}
-
 .interview__title {
   margin-bottom: 45px;
   font-size: 22px;
@@ -1468,8 +1463,6 @@ img {
 }
 
 .form__title {
-  margin-top: 15px;
-  padding: 0 0 20px 20px;
   line-height: 33px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1479,13 +1472,41 @@ img {
 .form__subtitle {
   display: block;
   font-size: 16px;
-  padding: 0 0 20px 15px;
+}
+
+.slick-dots, ul, li, button {
+  display: none;
 }
 
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 30px;
   }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview__list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .interview__counter {
+    margin-right: 20px;
+  }
+}
+
+.form__title {
+  font-size: 22px;
+}
+
+.form__subtitle {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
