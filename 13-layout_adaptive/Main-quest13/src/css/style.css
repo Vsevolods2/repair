@@ -1653,6 +1653,9 @@ img {
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
   }
+  .brif__form {
+    padding-left: 0px;
+  }
   .brif-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1680,6 +1683,10 @@ img {
   }
   .interview__subtitle {
     width: 190px;
+  }
+  .form__description {
+    margin: auto;
+    width: 195px;
   }
 }
 
