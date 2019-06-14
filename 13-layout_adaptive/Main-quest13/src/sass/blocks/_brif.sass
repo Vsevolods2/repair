@@ -14,16 +14,16 @@
         text-align: center
         #name-error
             position: absolute
-            right: 0
-            margin: 65px 230px
+            left: 220px
+            top: 258px
         #phone-error
             position: absolute
-            right: 0
-            margin: 65px 205px
+            left: 220px
+            top: 338px
         #email-error
             position: absolute
-            right: 0
-            margin: 65px 220px
+            left: 220px
+            top: 420px
     &__button
         display: inline-block
         height: 70px
@@ -111,7 +111,7 @@
     .brif
         background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
         background-position: top center, center bottom
-        background-size: 100% 50%, cover
+        background-size: 100% 45%, cover
         background-repeat: repeat-x, no-repeat
         &__form
             padding-left: 0px
@@ -127,6 +127,21 @@
                 font-size: 14px
                 line-height: 1.2
 @media (max-width: 320px)
+    .brif
+        padding-bottom: 30px
+        &__form
+            margin-top: 50px
+            #name-error
+                left: 5px
+                top: 285px
+            #phone-error
+                left: 5px
+                top: 365px
+            #email-error
+                left: 5px
+                top: 445px
+        &__input
+            margin-bottom: 22px
     .interview
         &__title
             font-size: 18px
@@ -135,6 +150,8 @@
         &__subtitle
             width: 190px
     .form
+        &__title
+            font-size: 18px
         &__description
             margin: auto
             width: 195px
