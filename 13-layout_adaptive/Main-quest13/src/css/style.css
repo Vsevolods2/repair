@@ -1663,7 +1663,7 @@ img {
     padding: 0;
   }
   .interview__title {
-    width: 580px;
+    max-width: 450px;
   }
   .interview-list__text {
     width: 205px;
@@ -1786,9 +1786,15 @@ img {
 }
 
 @media (max-width: 567px) {
+  .map {
+    width: 100%;
+    top: 520px;
+  }
   .contacts {
-    padding: 60px 0 0 50px;
-    margin-bottom: 45px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+    padding-top: 48px;
   }
   .contacts-list__item {
     font-size: 14px;
@@ -1797,14 +1803,7 @@ img {
 
 @media (max-width: 320px) {
   .map {
-    width: 100%;
-    top: 457px;
-  }
-  .contacts {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding: 0;
-    padding-top: 48px;
+    top: 520px;
   }
   .contacts__title {
     margin-bottom: 38px;
