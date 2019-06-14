@@ -1378,6 +1378,8 @@ img {
   max-width: 370px;
   margin-top: 15px;
   margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .brif__input {
