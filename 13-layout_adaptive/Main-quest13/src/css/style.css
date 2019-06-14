@@ -405,6 +405,9 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .slick-dots {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1226,11 +1229,24 @@ img {
   .price__subtitle {
     font-size: 16px;
   }
+  .card {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .card__title {
     font-size: 16px;
   }
   .card__link {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1334,10 +1350,10 @@ img {
             justify-content: center;
   }
   .steps__title {
-    font-size: 26px;
+    font-size: 24px;
   }
   .steps__subtitle {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1474,10 +1490,6 @@ img {
   font-size: 16px;
 }
 
-.slick-dots, ul, li, button {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 30px;
@@ -1491,9 +1503,12 @@ img {
   }
   .interview__subtitle {
     margin-bottom: 30px;
-  }
-  .interview__list__text {
     font-size: 14px;
+  }
+  .interview-list {
+    font-size: 16px;
+  }
+  .interview-list__text {
     max-width: 300px;
   }
   .interview__counter {
@@ -1502,11 +1517,12 @@ img {
 }
 
 .form__title {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .form__subtitle {
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -1604,6 +1620,18 @@ img {
 
 .contacts-list__bold {
   font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .contacts__title {
+    font-size: 20px;
+  }
+  .contacts__title br {
+    display: none;
+  }
+  .contacts-list__item {
+    font-size: 14px;
+  }
 }
 
 .modal {

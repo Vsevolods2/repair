@@ -322,7 +322,7 @@
               <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
               <input type="email" name="email" class="input brif__input" placeholder="Ваша почта">
               <button class="button brif__button wow flipInX" data-wow-delay="0.1s">Узнать стоимость</button>
-              <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
+              <span class="form__description"><br>Мы перезвоним Вам в течение 60 секунд</span>
               <!-- /.button brif__button -->
             </form>
           </div>
@@ -349,7 +349,7 @@
                 <img src="img/footer/map-placeholder.png" alt="Маркер">
               </span>
               <!-- /.contacts-list__icon -->
-                <span class="contacts-list__text">г. Москва<br><span class="contacts-list__bold">ул. Ленинга, д. 10,<br> корпус 2, оф. 308</span></span>
+                <span class="contacts-list__text">г. Москва<br><span class="contacts-list__bold">ул. Ленина, д. 10,<br> корпус 2, оф. 308</span></span>
               <!-- /.contacts-list__text -->
             </li>
             <!-- /.li contacts-list__item -->
@@ -472,6 +472,7 @@
     $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        dots: false,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
         responsive: [
@@ -481,7 +482,6 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
       }
     },
       {
@@ -490,7 +490,6 @@
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
         }
       },
     ]
