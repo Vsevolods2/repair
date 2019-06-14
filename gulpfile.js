@@ -34,9 +34,9 @@ gulp.task('move-fonts', function(done) {
 });
 
 gulp.task('tinypng', function(done) {
-    gulp.src('./13-layout_adaptive/Main-quest13/src/img/**/*')
+    gulp.src('./13-layout_adaptive/Main-quest13/src/img/**/*.{png,jpg,jpeg}')
         .pipe(tinyPNG({
-            key: '',
+            key: 'R9HSrigTMystr9rPGtGf6jq4HwQRxT0T',
         }))
     .pipe(gulp.dest('13-layout_adaptive/Main-quest13/dist/img'))
     done();

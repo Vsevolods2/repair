@@ -19,10 +19,10 @@
   "homepage": "https://github.com/Vsevolods2/repair#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0"
+    "gulp-clean-css": "^4.2.0",
+    "gulp-tinypng-compress": "^1.2.5"
   },
   "dependencies": {
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-tinypng-compress": "^1.2.5"
+    "gulp-htmlmin": "^5.0.1"
   }
 }

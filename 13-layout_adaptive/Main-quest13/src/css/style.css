@@ -1675,6 +1675,24 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .brif__form {
+    margin-top: 50px;
+  }
+  .brif__form #name-error {
+    left: 100px;
+    top: 258px;
+  }
+  .brif__form #phone-error {
+    left: 100px;
+    top: 338px;
+  }
+  .brif__form #email-error {
+    left: 100px;
+    top: 418px;
+  }
+}
+
 @media (max-width: 320px) {
   .brif {
     padding-bottom: 30px;
@@ -1684,15 +1702,15 @@ img {
   }
   .brif__form #name-error {
     left: 5px;
-    top: 285px;
+    top: 290px;
   }
   .brif__form #phone-error {
     left: 5px;
-    top: 365px;
+    top: 375px;
   }
   .brif__form #email-error {
     left: 5px;
-    top: 445px;
+    top: 460px;
   }
   .brif__input {
     margin-bottom: 22px;
