@@ -919,7 +919,7 @@ img {
     margin-bottom: 44px;
   }
   .hero-text {
-    padding-right: 60px;
+    padding-right: 0px;
   }
   .hero-text__title {
     font-size: 30px;
@@ -943,6 +943,7 @@ img {
     margin-bottom: 20px;
   }
   .hero-list__text {
+    max-width: 200px;
     font-size: 12px;
   }
   .hero-list__image {
@@ -955,7 +956,6 @@ img {
     padding: 25px 0;
   }
   .hero-text {
-    padding-right: 0;
     margin-right: -3px;
   }
   .hero-text__title {
@@ -963,7 +963,6 @@ img {
     line-height: 1.2;
   }
   .hero-list__text {
-    max-width: 200px;
     line-height: 1.2;
   }
 }
@@ -1012,7 +1011,7 @@ img {
 
 .offer__subtitle {
   max-width: 250px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .offer__input {
@@ -1091,11 +1090,28 @@ img {
     width: 100%;
     padding-right: 0;
   }
+  .offer-contacts {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 320px) {
   .offer__title {
+    font-size: 18px;
     line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+  }
+  .offer-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer-phone {
+    padding-top: 15px;
   }
 }
 
@@ -1643,12 +1659,20 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .interview {
+    padding: 0;
+  }
+  .interview__title {
+    width: 580px;
+  }
+  .interview-list__text {
+    width: 205px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 320px) {
-  .interview {
-    padding-right: 0;
-  }
   .interview__title {
     font-size: 18px;
     line-height: 1.2;
@@ -1656,11 +1680,6 @@ img {
   }
   .interview__subtitle {
     width: 190px;
-  }
-  .interview-list__text {
-    width: 205px;
-    font-size: 14px;
-    line-height: 1.2;
   }
 }
 
@@ -1745,6 +1764,7 @@ img {
 
 @media (max-width: 1200px) {
   .contacts__title {
+    margin-bottom: 75px;
     font-size: 20px;
   }
   .contacts__title br {
@@ -1760,6 +1780,7 @@ img {
     padding: 60px 0 0 90px;
   }
   .contacts__title {
+    margin-bottom: 60px;
     font-size: 18px;
   }
 }
@@ -1767,9 +1788,27 @@ img {
 @media (max-width: 567px) {
   .contacts {
     padding: 60px 0 0 50px;
+    margin-bottom: 45px;
   }
   .contacts-list__item {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .map {
+    width: 100%;
+    top: 457px;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0;
+    padding-top: 48px;
+  }
+  .contacts__title {
+    margin-bottom: 38px;
+    line-height: 1.2;
   }
 }
 
