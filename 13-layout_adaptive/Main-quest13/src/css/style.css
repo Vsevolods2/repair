@@ -347,6 +347,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -355,6 +356,7 @@ template {
   src: url("../fonts/MuseoSansCyrl/?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {
@@ -1107,8 +1109,8 @@ img {
 }
 
 @media (max-width: 1200px) {
-  __title {
-    font-size: 22px;
+  .portfolio__title {
+    font-size: 26px;
   }
 }
 
@@ -1224,6 +1226,12 @@ img {
   .price__subtitle {
     font-size: 16px;
   }
+  .card__title {
+    font-size: 16px;
+  }
+  .card__link {
+    font-size: 14px;
+  }
 }
 
 .step {
@@ -1324,6 +1332,12 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .steps__title {
+    font-size: 26px;
+  }
+  .steps__subtitle {
+    font-size: 16px;
   }
 }
 
@@ -1472,31 +1486,6 @@ img {
   .brif__form {
     padding-left: 30px;
   }
-  .interview {
-    padding-right: 30px;
-  }
-  .interview__title {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .interview__subtitle {
-    margin-bottom: 30px;
-  }
-  .interview__list__text {
-    font-size: 14px;
-    max-width: 300px;
-  }
-  .interview__counter {
-    margin-right: 20px;
-  }
-}
-
-.form__title {
-  font-size: 22px;
-}
-
-.form__subtitle {
-  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
