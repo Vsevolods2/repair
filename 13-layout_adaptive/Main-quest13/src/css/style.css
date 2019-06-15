@@ -992,14 +992,14 @@ img {
 
 .offer-block #name-error {
   position: absolute;
-  left: 0;
-  margin-top: 70px;
+  left: 255px;
+  top: 260px;
 }
 
 .offer-block #phone-error {
   position: absolute;
-  right: 0;
-  margin: 70px 185px;
+  left: 0;
+  top: 260px;
 }
 
 .offer__title {
@@ -1058,6 +1058,21 @@ img {
   .offer {
     background-size: cover;
   }
+  .offer-block {
+    width: 50%;
+    padding-right: 90px;
+    position: relative;
+  }
+  .offer-block #name-error {
+    position: absolute;
+    left: 0px;
+    top: 257px;
+  }
+  .offer-block #phone-error {
+    position: absolute;
+    left: 0;
+    top: 340px;
+  }
   .offer__title {
     font-size: 20px;
   }
@@ -1066,7 +1081,7 @@ img {
   }
   .offer__input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .offer__button {
     font-size: 12px;
@@ -1089,6 +1104,16 @@ img {
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer-block #name-error {
+    position: absolute;
+    left: 0px;
+    top: 205px;
+  }
+  .offer-block #phone-error {
+    position: absolute;
+    left: 0;
+    top: 290px;
   }
   .offer-contacts {
     padding-right: 0;

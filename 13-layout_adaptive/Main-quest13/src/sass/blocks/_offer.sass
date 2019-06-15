@@ -17,12 +17,12 @@
         position: relative
         #name-error
             position: absolute
-            left: 0
-            margin-top: 70px
+            left: 255px
+            top: 260px
         #phone-error
             position: absolute
-            right: 0
-            margin: 70px 185px
+            left: 0
+            top: 260px
     &__title
         line-height: 35px
         margin-bottom: 24px
@@ -58,13 +58,25 @@
 @media (max-width: 1200px)
     .offer
         background-size: cover
+        &-block
+            width: 50%
+            padding-right: 90px
+            position: relative
+            #name-error
+                position: absolute
+                left: 0px
+                top: 257px
+            #phone-error
+                position: absolute
+                left: 0
+                top: 340px
         &__title
             font-size: 20px
         &__subtitle
             font-size: 15px
         &__input
             width: 100%
-            margin-bottom: 10px
+            margin-bottom: 20px
         &__button
             font-size: 12px
         &-contacts
@@ -79,6 +91,14 @@
         &-block
             width: 100%
             padding-right: 0
+            #name-error
+                position: absolute
+                left: 0px
+                top: 205px
+            #phone-error
+                position: absolute
+                left: 0
+                top: 290px
         &-contacts
             padding-right: 0
 @media (max-width: 320px)
