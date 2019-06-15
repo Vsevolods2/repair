@@ -384,6 +384,9 @@ a, input, button {
 }
 
 @media (max-width: 1200px) {
+  *:hover {
+    display: none;
+  }
   .container {
     width: 760px;
   }
@@ -959,9 +962,6 @@ a, input, button {
   .hero {
     padding: 25px 0;
   }
-  .hero-text {
-    margin-right: -3px;
-  }
   .hero-text__title {
     margin-bottom: 10px;
     line-height: 1.2;
@@ -1089,10 +1089,10 @@ a, input, button {
     margin-bottom: 20px;
   }
   .offer__button {
-    font-size: 12px;
+    font-size: 15px;
   }
   .offer-contacts {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -1126,6 +1126,9 @@ a, input, button {
 }
 
 @media (max-width: 320px) {
+  .offer {
+    padding-bottom: 50px;
+  }
   .offer__title {
     font-size: 18px;
     line-height: 1.2;
@@ -1141,7 +1144,7 @@ a, input, button {
             flex-direction: column;
   }
   .offer-phone {
-    padding-top: 15px;
+    padding-top: 5px;
   }
 }
 
@@ -1210,8 +1213,10 @@ a, input, button {
 }
 
 @media (max-width: 320px) {
+  .portfolio {
+    padding-bottom: 50px;
+  }
   .portfolio__title {
-    margin-top: -15px;
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 27px;
@@ -1491,7 +1496,7 @@ a, input, button {
     font-size: 22px;
   }
   .steps__subtitle {
-    margin-bottom: 55px;
+    margin-bottom: 35px;
   }
 }
 
@@ -1503,6 +1508,9 @@ a, input, button {
 }
 
 @media (max-width: 320px) {
+  .step__image {
+    margin-bottom: 20px;
+  }
   .step__text {
     font-size: 12px;
   }
@@ -1660,7 +1668,7 @@ a, input, button {
     margin-bottom: 15px;
   }
   .interview__subtitle {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-size: 14px;
   }
   .interview-list__text {
@@ -1705,6 +1713,7 @@ a, input, button {
   }
   .interview-list__text {
     width: 205px;
+    margin-left: -20px;
     font-size: 14px;
     line-height: 1.2;
   }
@@ -1737,7 +1746,7 @@ a, input, button {
     padding-bottom: 30px;
   }
   .brif__form {
-    margin-top: 50px;
+    margin-top: 90px;
   }
   .brif__form #name-error {
     left: 5px;
@@ -1755,9 +1764,19 @@ a, input, button {
     margin-bottom: 20px;
   }
   .brif__button {
-    margin: 0 0 26px 0;
+    margin: 0 0 25px 0;
+  }
+  .interview-list__item:nth-child(1) {
+    margin-bottom: 25px;
+  }
+  .interview-list__item:nth-child(2) {
+    margin-bottom: 25px;
+  }
+  .interview-list__item:nth-child(3) {
+    margin-bottom: 25px;
   }
   .interview__title {
+    max-width: 270px;
     font-size: 18px;
     line-height: 1.2;
     margin-top: -11px;
@@ -1768,10 +1787,10 @@ a, input, button {
   .form__title {
     padding: 0;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
   .form__subtitle {
-    padding: 7px 5px 3px 0;
+    padding: 5px 0 3px 0;
   }
   .form__description {
     margin: auto;
@@ -1868,7 +1887,7 @@ a, input, button {
     display: none;
   }
   .contacts-list__item {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1893,18 +1912,19 @@ a, input, button {
     padding: 0;
     padding-top: 48px;
   }
-  .contacts-list__item {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 320px) {
   .map {
-    top: 520px;
+    top: 460px;
   }
   .contacts__title {
+    max-width: 235px;
     margin-bottom: 38px;
     line-height: 1.2;
+  }
+  .contacts-list {
+    margin-right: 10px;
   }
 }
 
