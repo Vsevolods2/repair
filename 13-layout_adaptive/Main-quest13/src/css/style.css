@@ -384,9 +384,6 @@ a, input, button {
 }
 
 @media (max-width: 1200px) {
-  *:hover {
-    display: none;
-  }
   .container {
     width: 760px;
   }
@@ -1526,6 +1523,7 @@ a, input, button {
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
+  padding-top: 75px;
 }
 
 .brif-block {
@@ -1664,7 +1662,7 @@ a, input, button {
     padding-right: 30px;
   }
   .interview__title {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 15px;
   }
   .interview__subtitle {
@@ -1681,12 +1679,12 @@ a, input, button {
 }
 
 .form__title {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .form__subtitle {
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
