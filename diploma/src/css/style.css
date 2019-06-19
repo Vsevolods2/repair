@@ -375,7 +375,7 @@ template {
 
 body {
   font-family: 'ProximaNova-Regular', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 img {
@@ -387,16 +387,23 @@ img {
   margin: auto;
 }
 
-.pseudo-title {
+.pseudo {
+  position: absolute;
   width: 244px;
   height: 58px;
-  font-size: 28px;
   background-color: #ffc800;
   font-weight: 400;
 }
 
+.pseudo__text {
+  font-size: 28px;
+  margin: 0;
+  margin-top: 12px;
+  font-family: 'ProximaNova-Semibold', sans-serif;
+  font-weight: 700;
+}
+
 .slick {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,17 +414,15 @@ img {
 
 .slick-dots {
   padding: 0;
+  margin: 0;
+  width: 112px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 112px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .slick-dots button {
@@ -541,10 +546,29 @@ a, input, button {
 
 .hero {
   height: 100vh;
+  position: relative;
 }
 
-.hero-slider {
-  height: 100%;
+.hero-block {
+  position: absolute;
+  z-index: 1;
+  max-width: 1159px;
+}
+
+.hero__title {
+  font-size: 35px;
+  color: #ffc800;
+}
+
+.hero__subtitle {
+  font-size: 35px;
+  color: #fffffe;
+}
+
+.hero__text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fffffe;
 }
 
 /* Slider */
@@ -647,5 +671,48 @@ a, input, button {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.card {
+  width: 377px;
+  height: 236px;
+}
+
+.card__subtitle {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.card__button {
+  padding: 0;
+  margin: 0;
+  width: 138px;
+  height: 33px;
+  background-color: #ffc800;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
