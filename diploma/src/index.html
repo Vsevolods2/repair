@@ -6,26 +6,38 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Монтаж и сантехника</title>
     <link rel="stylesheet" href="css/style.css">
-	</head>
+  </head>
+  
 	<body>
-		<nav class="navbar">
+		<header class="navbar">
 			<div class="container">
 				<div class="navbar-block">
-					<div class="navbar__logo">
-						<img src="img/navbar/logo.jpg" alt="Логотип монтажа" class="">
-          </div>
-          <!-- /.navbar-logo -->
-					<div class="navbar-info">
-            <a class="navbar__title" href="#">Услуги</a>
-            <a class="navbar__title" href="#">Цены</a>
-            <a class="navbar__title" href="#">Отзывы</a>
-            <a class="navbar__title" href="#">Новости</a>
-            <a class="navbar__title" href="#">Контакты</a>
-          </div>
+					<img src="img/navbar/logo.jpg" alt="Логотип монтажа" class="navbar__logo">
+					<nav class="navbar-info">
+            <ul class="navbar-source">
+              <li class="navbar-source__item">
+                <a href="#" class="navbar-source__link">Услуги</a>
+              </li>
+              <span class="navbar-source__line"></span>
+              <li class="navbar-source__item">
+                <a href="#" class="navbar-source__link">Цены</a>
+              <li>
+              <span class="navbar-source__line"></span>
+              <li class="navbar-source__item">
+                <a href="#" class="navbar-source__link">Отзывы</a>
+              </li>
+              <span class="navbar-source__line"></span>
+              <li class="navbar-source__item">
+                <a href="#" class="navbar-source__link">Новости</a>
+              </li>
+              <span class="navbar-source__line"></span>
+              <li class="navbar-source__item">
+                <a href="#" class="navbar-source__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
           <div class="navbar-contacts">
-            <div class="navbar__phone-image">
-              <img src="img/phone.png" alt="Телефон">
-            </div>
+            <img src="img/phone.png" alt="Телефон" class="navbar__phone-image">
             <a href="tel:+7(863)342-22-21" class="navbar__phone">+7 (863) <span class="navbar__phone-bold">342-22-21</span></a>
             <!-- /.navbar-phone -->
             <button class="button navbar__button">Закажите звонок</button>
@@ -35,7 +47,79 @@
 				<!-- /.navbar-block -->
 			</div>
 			<!-- /.container -->
-		</nav>
-		<!-- /.navbar -->
+		</header>
+    <!-- /.navbar -->
+    <main>
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="slider__item"><img src="img/hero/hero-image.jpg" alt="Картинка слайдера" class="slider__image"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/hero/hero-image.jpg" alt="Картинка слайдера" class="slider__image"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/hero/hero-image.jpg" alt="Картинка слайдера" class="slider__image"></div>
+          <!-- /.slider__item -->
+          <div class="slider__item"><img src="img/hero/hero-image.jpg" alt="Картинка слайдера" class="slider__image"></div>
+          <!-- /.slider__item -->
+        </div>
+      </section>
+      <!-- /.hero -->
+      <section class="services">
+        <div class="containter">
+          <cards>
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+            <div class="services-card">
+              <button></button>
+            </div>
+            <!-- /.services-card -->
+          </cards>
+        </div>
+        <!-- /.containter -->
+      </section>
+      <!-- /.services -->
+    </main>
+
+  <!-- главный скрипт -->
+  <script src="js/main.js"></script>
+
+  <!-- скрипт jQuery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <!-- скрипт слайдера -->
+  <script src="js/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.hero-slider').slick({
+      infinite: true,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      speed: 1000,
+      adaptiveHeight: false,
+      });
+    });
+    
+  </script>
+
 	</body>
 </html>
+
