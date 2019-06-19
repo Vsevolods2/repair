@@ -8,12 +8,15 @@ img
     width: 1170px
     margin: auto
 .pseudo
-    position: absolute
+    position: relative
     width: 244px
     height: 58px
     background-color: $corpo-yel
     font-weight: 400
     &__text
+        display: flex
+        justify-content: center
+        align-items: center
         font-size: 28px
         margin: 0
         margin-top: 12px
@@ -23,15 +26,21 @@ img
     justify-content: center
     &-dots
         padding: 0
-        margin: 0
-        width: 112px
+        margin: auto
         list-style: none
+        position: absolute
+        width: 10%
+        left: 45%
+        bottom: 15px
         display: flex
         justify-content: space-between
+        align-items: center
         & button
+            width: 20px
+            height: 20px
             color: #ffffff
             background-color: #ffffff
-            // border: none
+            border: none
             cursor: pointer
             &:hover
                 color: $corpo-yel

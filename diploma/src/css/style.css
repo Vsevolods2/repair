@@ -388,7 +388,7 @@ img {
 }
 
 .pseudo {
-  position: absolute;
+  position: relative;
   width: 244px;
   height: 58px;
   background-color: #ffc800;
@@ -396,6 +396,15 @@ img {
 }
 
 .pseudo__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 28px;
   margin: 0;
   margin-top: 12px;
@@ -414,20 +423,29 @@ img {
 
 .slick-dots {
   padding: 0;
-  margin: 0;
-  width: 112px;
+  margin: auto;
   list-style: none;
+  position: absolute;
+  width: 10%;
+  left: 45%;
+  bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slick-dots button {
+  width: 20px;
+  height: 20px;
   color: #ffffff;
   background-color: #ffffff;
+  border: none;
   cursor: pointer;
 }
 
@@ -545,30 +563,40 @@ a, input, button {
 }
 
 .hero {
-  height: 100vh;
   position: relative;
+  margin-bottom: 133px;
 }
 
 .hero-block {
   position: absolute;
-  z-index: 1;
-  max-width: 1159px;
+  z-index: 2;
+  top: auto;
+  left: auto;
 }
 
 .hero__title {
+  max-width: 1158px;
   font-size: 35px;
   color: #ffc800;
 }
 
 .hero__subtitle {
+  max-width: 655px;
   font-size: 35px;
   color: #fffffe;
 }
 
 .hero__text {
+  max-width: 1106px;
   font-size: 20px;
   line-height: 28px;
   color: #fffffe;
+  opacity: 0.42;
+}
+
+.slider__image {
+  width: 100%;
+  height: 87vh;
 }
 
 /* Slider */
@@ -674,6 +702,7 @@ a, input, button {
 }
 
 .services {
+  background-color: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,7 +717,17 @@ a, input, button {
   height: 236px;
 }
 
+.card:hover__subtitle {
+  color: black;
+}
+
+.card:hover__button {
+  background-color: black;
+  color: #fdfcfc;
+}
+
 .card__subtitle {
+  color: #fdfcfc;
   font-size: 20px;
   line-height: 26px;
 }
