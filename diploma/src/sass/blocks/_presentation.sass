@@ -1,0 +1,54 @@
+.presentation
+    padding-top: 143px
+    padding-bottom: 142px
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-view
+        width: 55%
+        display: flex
+        flex-wrap: wrap
+        z-index: 1
+    &-card
+        z-index: 2
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 198px
+        height: 168px
+        background-color: white
+        margin: 18px
+        // &:before
+        //     content: ''
+        //     width: 34vw
+        //     position: absolute
+        //     height: 100%
+        //     top: 0
+        //     right: 0
+        //     background-color: $sec-bg-cl
+        //     z-index: 3
+        &__image
+            z-index: 4
+            padding-top: 16px
+            padding-bottom: 20px
+        &__text
+            z-index: 4
+            vertical-align: middle
+            text-align: center
+    &-list
+        margin: 0
+        padding: 0
+        list-style: none
+        &__text
+            +sbttl-sz
+            line-height: 25px
+@media (min-width: 992px)
+    .presentation
+        &-list
+            &__text:before
+                content: ''
+                width: 31px
+                height: 2px
+                background-color: $corpo-bl
+        

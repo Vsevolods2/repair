@@ -16,7 +16,7 @@
 					<nav class="navbar-info">
             <ul class="navbar-source">
               <li class="navbar-source__item">
-                <a href="#services" class="navbar-source__link">Услуги</a>
+                <a href="#pseudo-services" class="navbar-source__link">Услуги</a>
               </li>
               <span class="navbar-source__line"></span>
               <li class="navbar-source__item">
@@ -76,7 +76,7 @@
 
       <section class="services">
         <div class="container">
-          <div class="pseudo" id="services"><p class="pseudo__text">УСЛУГИ</p></div>
+          <div class="pseudo" id="pseudo-services"><p class="pseudo__text">УСЛУГИ</p></div>
           <div class="cards">
             <div class="card services-card">
               <div class="card-bg"><img src="img/services/services-pic-1.jpg" alt="" class="card-bg__image"></div>
@@ -123,39 +123,105 @@
 
       <section class="presentation">
         <div class="container">
+          <!-- <div class="pseudo" id="pseudo-presentation"><p class="pseudo__text">УСЛУГИ</p></div> -->
           <div class="presentation-block">
             <div class="presentation-view">
-              <div class="presentation-card"></div>
-              <div class="presentation-card"></div>
-              <div class="presentation-card"></div>
-              <div class="presentation-card"></div>
-              <div class="presentation-card"></div>
-              <div class="presentation-card"></div>
+              <div class="presentation-card">
+                <img src="img/presentation/shield.jpg" alt="Щит" class="presentation-card__image">
+                <span class="presentation-card__text">100% ГАРАНТИЯ<br> КАЧЕСТВА</span>
+              </div>
+              <div class="presentation-card">
+                <img src="img/presentation/diagramm.jpg" alt="Рост" class="presentation-card__image">
+                <span class="presentation-card__text">С НАМИ ВЫГОДНО</span>
+              </div>
+              <div class="presentation-card">
+                <img src="img/presentation/trophy.jpg" alt="Успех" class="presentation-card__image">
+                <span class="presentation-card__text">БОЛЬШОЙ ОПЫТ</span>
+              </div>
+              <div class="presentation-card">
+                <img src="img/presentation/operator.jpg" alt="Помощник" class="presentation-card__image">
+                <span class="presentation-card__text">БЫСТРАЯ ОНЛАЙН<br> ПОДДЕРЖКА</span>
+              </div>
+              <div class="presentation-card">
+                <img src="img/presentation/care.jpg" alt="Забота" class="presentation-card__image">
+                <span class="presentation-card__text">С ЗАБОТОЙ<br> О КЛИЕНТЕ</span>
+              </div>
+              <div class="presentation-card">
+                <img src="img/presentation/calendar.jpg" alt="Календарь" class="presentation-card__image">
+                <span class="presentation-card__text">ТОЧНО В СРОК</span>
+              </div>
             </div>
-            <div class="presentation-list">
-              <ul>
-                <li class="presentation-list__item">
-                  <span class="presentation-list__counter">1</span>
-                  <span class="presentation-list__text"></span>
-                </li>
-                <li class="presentation-list__item">
-                  <span class="presentation-list__counter">2</span>
-                  <span class="presentation-list__text"></span>
-                </li>
-                <li class="presentation-list__item">
-                  <span class="presentation-list__counter">3</span>
-                  <span class="presentation-list__text"></span>
-                </li>
-                <li class="presentation-list__item">
-                  <span class="presentation-list__counter">4</span>
-                  <span class="presentation-list__text"></span>
-                </li>
-              </ul>
+            <ul class="presentation-list">
+              <li class="presentation-list__item">
+                <img src="img/presentation/presentation-counter-1.png" class="presentation-list__counter">
+                <span class="presentation-list__text">Вызов бригады на следующий день после звонка</span>
+              </li>
+              <li class="presentation-list__item">
+                <img src="img/presentation/presentation-counter-2.png" class="presentation-list__counter">
+                <span class="presentation-list__text">Вся бригада имеет специальное образование</span>
+              </li>
+              <li class="presentation-list__item">
+                <img src="img/presentation/presentation-counter-3.png" class="presentation-list__counter">
+                <span class="presentation-list__text">Длительный срок на рынке</span>
+              </li>
+              <li class="presentation-list__item">
+                <img src="img/presentation/presentation-counter-4.png" class="presentation-list__counter">
+                <span class="presentation-list__text">Опыт,качество и скорость</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <!-- /.presentation-block -->
+      </div>
+        <!-- /.container -->
+      </section>
+      <section class="review">
+        <!-- <div class="container">
+          <div class="slider">
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
+            </div>
+            <div class="slider-item">
+              <div class="slider-photo"></div>
+              <p class="slider-title"></p>
+              <span class="slider-text"></span>
+              <button></button>
+              <button></button>
             </div>
           </div>
-          <!-- /.presentation-block -->
-        </div>
-        <!-- /.container -->
+        </div> -->
       </section>
       <!-- /.presentation -->
     </main>
@@ -180,6 +246,13 @@
       speed: 1000,
       adaptiveHeight: true,
       });
+      var $page = $('html, body');
+      $('a[href*="#"]').click(function() {
+      $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 400);
+      return false;
+      });  
     });
     
   </script>

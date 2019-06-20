@@ -571,9 +571,7 @@ img {
 
 .hero-block {
   position: absolute;
-  z-index: 2;
-  top: auto;
-  left: auto;
+  z-index: 1;
 }
 
 .hero__title {
@@ -597,8 +595,6 @@ img {
 }
 
 .slider__image {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
   width: 100%;
   height: 87vh;
   -o-object-fit: cover;
@@ -814,9 +810,90 @@ img {
   }
   .card:hover .card__subtitle {
     display: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .card:hover .card__description {
     display: block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+.presentation {
+  padding-top: 143px;
+  padding-bottom: 142px;
+}
+
+.presentation-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.presentation-view {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 1;
+}
+
+.presentation-card {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 198px;
+  height: 168px;
+  background-color: white;
+  margin: 18px;
+}
+
+.presentation-card__image {
+  z-index: 4;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.presentation-card__text {
+  z-index: 4;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.presentation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.presentation-list__text {
+  font-size: 20px;
+  line-height: 26px;
+  line-height: 25px;
+}
+
+@media (min-width: 992px) {
+  .presentation-list__text:before {
+    content: '';
+    width: 31px;
+    height: 2px;
+    background-color: #010101;
   }
 }
 /*# sourceMappingURL=style.css.map */
