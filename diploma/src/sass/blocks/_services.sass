@@ -1,36 +1,69 @@
 .services
     background-color: $sec-bg-cl
+    position: relative
     display: flex
     justify-content: space-between
     text-align: center
+    padding-top: 104px
+    padding-bottom: 117px
 .card
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
     width: 377px
     height: 236px
-    &:hover
-        &__subtitle
-            color: black
-        &__button
-            background-color: black
-            color: #fdfcfc
+    margin-bottom: 21px
+    cursor: pointer
+    position: relative
+    &-bg
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100% 
+        &__image
+            width: 100%
+            height: 100%
     &__subtitle
-        color: $serv-wh
         +sbttl-sz
-        // &:hover
-        //     color: black
+        z-index: 99
+        max-width: 295px
+        display: block
+        position: absolute
+        top: 23%
+        color: $serv-wh
+        transition: all 0.3s ease
+    &__description
+        z-index: 99
+        max-width: 295px
+        position: absolute
+        top: 23%
+        color: black
+        +sbttl-sz
+        display: none
+        transition: all 0.3s ease
     &__button
-        padding: 0
-        margin: 0
+        position: absolute
+        bottom: 29%
+        z-index: 99
         width: 138px
         height: 33px
         background-color: $corpo-yel
         font-size: 15px
         font-weight: 400
         border: none
-        cursor: pointer
-        // &:hover
-        //     background-color: black
-        //     color: #fdfcfc
+        transition: all 0.3s ease
     &s
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+@media(min-width: 992px)
+    .card:hover
+        .card__button
+            background-color: black
+            color: #fdfcfc
+        .card__subtitle
+            display: none
+        .card__description
+            display: block

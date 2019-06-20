@@ -369,6 +369,7 @@ template {
 }
 
 * {
+  outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -388,9 +389,10 @@ img {
 }
 
 .pseudo {
-  position: relative;
+  position: absolute;
   width: 244px;
   height: 58px;
+  top: -25px;
   background-color: #ffc800;
   font-weight: 400;
 }
@@ -456,10 +458,6 @@ img {
   transition: all 0.3s ease;
 }
 
-a, input, button {
-  outline: none;
-}
-
 .navbar {
   padding: 7px 0 8px;
   position: relative;
@@ -468,7 +466,7 @@ a, input, button {
 .navbar:after {
   content: '';
   position: absolute;
-  width: 40%;
+  width: 34vw;
   height: 100%;
   top: 0;
   right: 0;
@@ -498,23 +496,21 @@ a, input, button {
 
 .navbar-source__link {
   display: inline-block;
-  line-height: 1;
+  position: relative;
   color: #010101;
   text-decoration: none;
 }
 
-.navbar-source__link:hover {
-  color: #ffc800;
-}
-
-.navbar-source__link:hover:after {
+.navbar-source__link:before {
   content: '';
-  background-color: #ffc800;
-  display: block;
-  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
   height: 2px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  background-color: #ffc800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar-source__line {
@@ -562,6 +558,12 @@ a, input, button {
   cursor: pointer;
 }
 
+@media (min-width: 992px) {
+  .navbar-source__link:hover::before {
+    width: 100%;
+  }
+}
+
 .hero {
   position: relative;
   margin-bottom: 133px;
@@ -595,8 +597,14 @@ a, input, button {
 }
 
 .slider__image {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
   width: 100%;
   height: 87vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 /* Slider */
@@ -703,6 +711,7 @@ a, input, button {
 
 .services {
   background-color: #f1f1f1;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,38 +719,81 @@ a, input, button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
+  padding-top: 104px;
+  padding-bottom: 117px;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 377px;
   height: 236px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  position: relative;
 }
 
-.card:hover__subtitle {
-  color: black;
+.card-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.card:hover__button {
-  background-color: black;
-  color: #fdfcfc;
+.card-bg__image {
+  width: 100%;
+  height: 100%;
 }
 
 .card__subtitle {
-  color: #fdfcfc;
   font-size: 20px;
   line-height: 26px;
+  z-index: 99;
+  max-width: 295px;
+  display: block;
+  position: absolute;
+  top: 23%;
+  color: #fdfcfc;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card__description {
+  z-index: 99;
+  max-width: 295px;
+  position: absolute;
+  top: 23%;
+  color: black;
+  font-size: 20px;
+  line-height: 26px;
+  display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card__button {
-  padding: 0;
-  margin: 0;
+  position: absolute;
+  bottom: 29%;
+  z-index: 99;
   width: 138px;
   height: 33px;
   background-color: #ffc800;
   font-size: 15px;
   font-weight: 400;
   border: none;
-  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cards {
@@ -753,5 +805,18 @@ a, input, button {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .card:hover .card__button {
+    background-color: black;
+    color: #fdfcfc;
+  }
+  .card:hover .card__subtitle {
+    display: none;
+  }
+  .card:hover .card__description {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
     &:after
         content: ''
         position: absolute
-        width: 40%
+        width: 34vw
         height: 100%
         top: 0
         right: 0
@@ -20,18 +20,18 @@
         list-style: none
         &__link
             display: inline-block
-            line-height: 1
+            position: relative
             color: $corpo-bl
             text-decoration: none
-            &:hover
-                color: $corpo-yel
-                &:after
-                    content: ''
-                    background-color: $corpo-yel
-                    display: block
-                    width: 100%
-                    height: 2px
-                    transition: 0.2s
+            &:before
+                content: ''
+                position: absolute
+                bottom: -5px
+                left: 0
+                width: 0%
+                height: 2px
+                background-color: $corpo-yel
+                transition: 0.3s
         &__line
             width: 2px
             height: 12px
@@ -60,3 +60,8 @@
         background-color: $corpo-yel
         border: none
         cursor: pointer
+@media (min-width: 992px)
+    .navbar
+        &-source
+            &__link:hover::before
+                width: 100%
