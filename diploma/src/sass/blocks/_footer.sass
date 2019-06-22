@@ -8,22 +8,24 @@
         box-shadow: 0 0 5px 2px
         display: flex
         flex-direction: column
-        justify-content: space-around
         align-items: center
         position: absolute
-        top: 0
-        left: 0
+        top: 20%
+        left: 10%
         &__title
             +sbttl-sz
+            padding-top: 51px
             &-yellow
                 color: $corpo-yel
         &__input
+            padding-top: 51px
             width: 100%
             max-width: 305px
             border: none
             font-style: italic
             border-bottom: 1px solid black
         &__button
+            margin-top: 72px
             width: 304px
             height: 58px
     &-block
@@ -31,30 +33,36 @@
         display: flex
         justify-content: space-between
         align-items: center
-        &__marker
-            width: 15px
-            height: 21px
-        &__address
-            color: white
-            font-style: normal
+    &-logos
         &__social
             width: 26px
             height: 26px
+            margin-right: 10px
+    &-location
+        display: flex
+        &__marker
+            width: 15px
+            height: 21px
+            margin-right: 13px
+        &__address
+            color: white
+            font-style: normal
+    &-connection
         &__message
             width: 20px
             height: 14px
         &__mail
             color: white
             text-decoration: none
+        &__line
+            width: 2px
+            height: 12px
+            display: inline-block
+            background-color: white
+            opacity: 0.33
+            margin: 0 20px 0 20px
         &__phone
             width: 18px
             height: 18px
         &__number
             color: white
-            text-decoration: none
-        &__line
-            width: 2px
-            height: 12px
-            background-color: white
-            opacity: 0.3
-            margin: 0 26px 0 26px
