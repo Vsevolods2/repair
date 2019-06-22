@@ -32,15 +32,15 @@
         display: block
         position: absolute
         top: 23%
-        color: $serv-wh
+        color: white
         transition: all 0.3s ease
     &__description
+        +sbttl-sz
         z-index: 99
         max-width: 295px
         position: absolute
         top: 23%
-        color: black
-        +sbttl-sz
+        color: $corpo-bl
         display: none
         transition: all 0.3s ease
     &__button
@@ -49,19 +49,15 @@
         z-index: 99
         width: 138px
         height: 33px
-        background-color: $corpo-yel
         font-size: 15px
-        font-weight: 400
-        border: none
-        transition: all 0.3s ease
     &s
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-@media(min-width: 992px)
+@media (min-width: 992px)
     .card:hover
         .card__button
-            background-color: black
+            background-color: $corpo-bl
             color: #fdfcfc
         .card__subtitle
             display: none

@@ -4,7 +4,7 @@
     &:after
         content: ''
         position: absolute
-        width: 34vw
+        width: 33%
         height: 100%
         top: 0
         right: 0
@@ -16,6 +16,7 @@
         align-items: center
     &-source
         padding: 0
+        padding-left: 30px
         display: flex
         list-style: none
         &__link
@@ -35,14 +36,14 @@
         &__line
             width: 2px
             height: 12px
-            background-color: $sec-bg-cl
+            background-color: $corpo-bl
+            opacity: 0.15
             margin: 0 26px 0 26px
     &-contacts
         display: flex
         position: relative
         justify-content: space-around
-        align-items: center     
-        
+        align-items: center             
     &__phone
         color: $corpo-bl
         text-decoration: none
@@ -56,10 +57,6 @@
         width: 138px
         height: 30px
         font-size: 14px
-        font-weight: 700
-        background-color: $corpo-yel
-        border: none
-        cursor: pointer
 @media (min-width: 992px)
     .navbar
         &-source

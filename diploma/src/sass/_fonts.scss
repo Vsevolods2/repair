@@ -18,16 +18,6 @@
     font-style: normal;
     font-display: auto;
     }
-@font-face {
-    font-family: 'ProximaNova-Italic';
-    src: url('../fonts/ProximaNovaCyrl/');
-    src: url('../fonts/ProximaNovaCyrl/?#iefix') format('embedded-opentype'),
-    url('../fonts/ProximaNovaCyrl/ProximaNova-RegularIt.woff') format('woff'),
-    url('../fonts/ProximaNovaCyrl/ProximaNova-RegularIt.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: auto;
-    }
 
 @mixin reg {
     font-family: 'ProximaNova-Regular', sans-serif;
@@ -37,9 +27,4 @@
 @mixin bold {
     font-family: 'ProximaNova-Semibold', sans-serif;
     font-weight: 700;
-}
-
-@mixin ital {
-    font-family: 'ProximaNova-Italic', sans-serif;
-    font-weight: 400;
 }

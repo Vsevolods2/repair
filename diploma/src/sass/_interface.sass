@@ -12,9 +12,9 @@ img
     position: absolute
     width: 244px
     height: 58px
-    top: -25px
     background-color: $corpo-yel
     font-weight: 400
+    top: -25px
     &__text
         display: flex
         justify-content: center
@@ -28,12 +28,11 @@ img
     justify-content: center
     &-dots
         padding: 0
-        margin: auto
+        margin: 0
         list-style: none
         position: absolute
         width: 10%
         left: 45%
-        bottom: 15px
         display: flex
         justify-content: space-between
         align-items: center
@@ -44,8 +43,17 @@ img
             background-color: #ffffff
             border: none
             cursor: pointer
+            transition: all 0.3s ease
             &:hover
                 color: $corpo-yel
                 background-color: $corpo-yel
-                transition: all 0.3s ease
-    
+.button
+    background-color: $corpo-yel
+    color: black
+    border: none
+    cursor: pointer
+    transition: all 0.3s ease
+@media (min-width: 992px)
+    .button:hover
+        background-color: $corpo-bl
+        color: white

@@ -1,0 +1,60 @@
+.footer
+    background-color: $corpo-bl
+    position: relative
+    &-form
+        width: 397px
+        height: 385px
+        background-color: white
+        box-shadow: 0 0 5px 2px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        position: absolute
+        top: 0
+        left: 0
+        &__title
+            +sbttl-sz
+            &-yellow
+                color: $corpo-yel
+        &__input
+            width: 100%
+            max-width: 305px
+            border: none
+            font-style: italic
+            border-bottom: 1px solid black
+        &__button
+            width: 304px
+            height: 58px
+    &-block
+        height: 134px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__marker
+            width: 15px
+            height: 21px
+        &__address
+            color: white
+            font-style: normal
+        &__social
+            width: 26px
+            height: 26px
+        &__message
+            width: 20px
+            height: 14px
+        &__mail
+            color: white
+            text-decoration: none
+        &__phone
+            width: 18px
+            height: 18px
+        &__number
+            color: white
+            text-decoration: none
+        &__line
+            width: 2px
+            height: 12px
+            background-color: white
+            opacity: 0.3
+            margin: 0 26px 0 26px
