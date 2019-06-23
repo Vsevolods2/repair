@@ -5,27 +5,30 @@
         width: 397px
         height: 385px
         background-color: white
-        box-shadow: 0 0 5px 2px
+        box-shadow: 0 0 10px 2px
         display: flex
         flex-direction: column
         align-items: center
         position: absolute
-        top: 20%
-        left: 10%
+        top: 18%
+        left: 7%
         &__title
+            +bold
             +sbttl-sz
-            padding-top: 51px
+            padding-top: 45px
             &-yellow
                 color: $corpo-yel
         &__input
-            padding-top: 51px
+            +txt-sz
+            padding-top: 38px
             width: 100%
             max-width: 305px
             border: none
             font-style: italic
             border-bottom: 1px solid black
         &__button
-            margin-top: 72px
+            +sbttl-sz
+            margin-top: 63px
             width: 304px
             height: 58px
     &-block
@@ -45,9 +48,13 @@
             height: 21px
             margin-right: 13px
         &__address
+            +sbttl-sz
             color: white
             font-style: normal
     &-connection
+        +txt-sz
+        display: flex
+        align-items: center
         &__message
             width: 20px
             height: 14px
