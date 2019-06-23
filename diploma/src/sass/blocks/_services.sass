@@ -25,43 +25,52 @@
         &__image
             width: 100%
             height: 100%
+            object-fit: cover
     &__subtitle
         +sbttl-sz
-        z-index: 99
         max-width: 295px
         display: block
         position: absolute
-        top: 23%
+        top: 16%
         color: white
-        transition: all 0.3s ease
     &__description
         +sbttl-sz
-        z-index: 99
         max-width: 295px
         position: absolute
-        top: 23%
+        top: 16%
         color: $corpo-bl
         display: none
-        transition: all 0.3s ease
     &__button
+        margin: 0
+        padding: 7px
         position: absolute
         bottom: 29%
-        z-index: 99
         width: 138px
         height: 33px
         font-size: 15px
+    &__label
+        margin: 0
+        padding: 7px
+        bottom: 29%
+        width: 138px
+        height: 33px
+        font-size: 15px
+        position: absolute
+        color: $corpo-bl
+        display: none
+        background-color: $corpo-bl
+        color: #fdfcfc
     &s
         display: flex
         justify-content: space-between
         flex-wrap: wrap
 @media (min-width: 992px)
     .card:hover
-        .card__button
-            background-color: $corpo-bl
-            color: #fdfcfc
         .card__subtitle
             display: none
-            transition: all 0.3s ease
         .card__description
             display: block
-            transition: all 0.3s ease
+        .card__button
+            display: none
+        .card__label
+            display: block
