@@ -12,15 +12,33 @@
         position: absolute
         top: 18%
         left: 7%
+        #name-error
+            position: absolute
+            color: $corpo-yel
+            top: 150px
+        #phone-error
+            position: absolute
+            color: $corpo-yel
+            top: 215px
         &__title
             +bold
             +sbttl-sz
             padding-top: 45px
             &-yellow
                 color: $corpo-yel
-        &__input
+        &__name
             +txt-sz
-            padding-top: 38px
+            position: absolute
+            top: 109px
+            width: 100%
+            max-width: 305px
+            border: none
+            font-style: italic
+            border-bottom: 1px solid black
+        &__phone
+            +txt-sz
+            position: absolute
+            top: 173px
             width: 100%
             max-width: 305px
             border: none
@@ -28,9 +46,10 @@
             border-bottom: 1px solid black
         &__button
             +sbttl-sz
-            margin-top: 63px
+            position: absolute
             width: 304px
             height: 58px
+            bottom: 58px
     &-block
         height: 134px
         display: flex

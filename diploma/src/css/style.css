@@ -1069,6 +1069,18 @@ li {
   left: 7%;
 }
 
+.footer-form #name-error {
+  position: absolute;
+  color: #ffc800;
+  top: 150px;
+}
+
+.footer-form #phone-error {
+  position: absolute;
+  color: #ffc800;
+  top: 215px;
+}
+
 .footer-form__title {
   font-family: 'ProximaNova-Semibold', sans-serif;
   font-weight: 700;
@@ -1081,10 +1093,23 @@ li {
   color: #ffc800;
 }
 
-.footer-form__input {
+.footer-form__name {
   font-size: 18px;
   line-height: 28px;
-  padding-top: 38px;
+  position: absolute;
+  top: 109px;
+  width: 100%;
+  max-width: 305px;
+  border: none;
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+
+.footer-form__phone {
+  font-size: 18px;
+  line-height: 28px;
+  position: absolute;
+  top: 173px;
   width: 100%;
   max-width: 305px;
   border: none;
@@ -1095,9 +1120,10 @@ li {
 .footer-form__button {
   font-size: 20px;
   line-height: 26px;
-  margin-top: 63px;
+  position: absolute;
   width: 304px;
   height: 58px;
+  bottom: 58px;
 }
 
 .footer-block {

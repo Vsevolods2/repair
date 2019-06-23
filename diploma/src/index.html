@@ -52,11 +52,11 @@
 
     <main>
       <section class="hero">
-          <div class="hero-block">
+          <!-- <div class="hero-block">
             <p class="hero-block__title">НАША БРИГАДА ПО МОНТИРОВАНИЮ ОТОПЛЕНИЯ И САНТЕХНИКИ</p>
             <p class="hero-block__subtitle">вызов по Москве и Московской области</p>
             <p class="hero-block__text">Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам нужно это оставить заявку либо позовнить на указанный номер.Всего хорошего.</p>
-          </div>
+          </div> -->
           <div class="hero-slider">
             <div class="hero-slider__item">
               <img src="img/hero/hero-image.jpg" alt="Картинка слайдера" class="hero-slider__image">
@@ -319,12 +319,12 @@
       <div class="map">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9e3f814052626a6b2b11f5fe7461415cdec50a2a0a8b6371b04031c67281a0ff&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
-      <div class="footer-form">
+      <form action="#" class="footer-form" id="footer-form">
         <div class="footer-form__title">ОСТАВЬТЕ <span class="footer-form__title-yellow">ЗАЯВКУ</div>
-        <input type="text" class="footer-form__input" placeholder="Введите Ваше имя"></input>
-        <input type="tel" class="footer-form__input" placeholder="Введите Ваш номер телефона"></input>
+        <input type="text" name="name" class="footer-form__name" placeholder="Введите Ваше имя"></input>
+        <input type="tel" name="phone" class="footer-form__phone phone" placeholder="Введите Ваш номер телефона"></input>
         <button class="button footer-form__button">ЗАКАЗАТЬ ЗВОНОК</button>
-      </div>
+        </form>
       <div class="container">
         <div class="footer-block">
           <div class="footer-location">
@@ -357,6 +357,12 @@
   <!-- скрипт слайдера -->
   <script src="js/slick.min.js"></script>
 
+  <!-- скрипт валидации форм -->
+  <script src="js/jquery.validate.min.js"></script>
+
+  <!-- скрипт для маски телефона -->
+  <script src="js/jquery.maskedinput.min.js"></script>
+
   <script>
     $(document).ready(function(){
       // работа слайдера в hero
@@ -385,9 +391,33 @@
           scrollTop: $($.attr(this, 'href')).offset().top
         }, 400);
         return false;
-      });  
-    });
-    
+      });
+      // работа маски телефона
+      $('.phone').mask('+7 (999) 999 99-99')
+      $('#footer-form').validate({
+        rules: {
+          name: {
+            required: true,
+            minlength: 2,
+          },
+          phone: { 
+            required: true,
+            phone: true,
+          },
+        },
+        messages: {
+          name: {
+            required: "Укажите Ваше имя",
+            minlength: jQuery.validator.format("Нужно {0} знака"),
+            },
+          phone: {
+            required: 'Укажите Ваш телефон',
+            },
+          },
+          errorClass: "footer-error",
+        },
+      )}
+    )
   </script>
 
 	</body>
