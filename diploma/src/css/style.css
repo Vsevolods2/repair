@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url("../fonts/ProximaNovaCyrl/");
@@ -872,14 +873,19 @@ li {
 
 .presentation-view {
   width: 65%;
+  padding-right: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .presentation-card {
+  margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,42 +896,50 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   width: 198px;
   height: 168px;
   background-color: white;
-  margin: 18px;
+  border: 1px solid black;
 }
 
 .presentation-card__image {
-  z-index: 4;
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .presentation-card__text {
-  z-index: 4;
   vertical-align: middle;
   text-align: center;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .presentation-list {
   margin: 0;
   padding: 0;
+  width: 35%;
+}
+
+.presentation-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
 }
 
 .presentation-list__text {
+  padding-left: 16px;
   font-size: 20px;
-  line-height: 26px;
   line-height: 25px;
 }
 
-@media (min-width: 992px) {
-  .presentation-list__text:before {
-    content: '';
-    width: 31px;
-    height: 2px;
-    background-color: #010101;
-  }
+.presentation-list__text:before {
+  content: '— ';
 }
 
 .review {
@@ -956,6 +970,7 @@ li {
 
 .news {
   text-align: center;
+  padding-top: 87px;
   padding-bottom: 72px;
 }
 
@@ -979,10 +994,12 @@ li {
 .news-card__image {
   width: 100%;
   height: 279px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .news-info {
-  width: 324px;
+  width: 329px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,9 +1015,12 @@ li {
   font-weight: 700;
   font-size: 20px;
   color: #010101;
+  margin-top: 22px;
+  margin-bottom: 14px;
 }
 
 .news-info__date {
+  margin-top: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,9 +1029,16 @@ li {
           align-items: center;
 }
 
+.news-info__article {
+  font-size: 18px;
+  line-height: 28px;
+}
+
 .news-button {
   width: 300px;
   height: 58px;
+  font-size: 20px;
+  line-height: 26px;
   margin-right: auto;
   margin-left: auto;
 }

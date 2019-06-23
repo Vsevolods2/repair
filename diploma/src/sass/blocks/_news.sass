@@ -1,5 +1,6 @@
 .news
     text-align: center
+    padding-top: 87px
     padding-bottom: 72px
     &-block
         display: flex
@@ -12,8 +13,9 @@
         &__image
             width: 100%
             height: 279px
+            object-fit: cover
     &-info
-        width: 324px
+        width: 329px
         display: flex
         justify-content: space-between
         flex-wrap: wrap
@@ -21,11 +23,17 @@
             +bold
             font-size: 20px
             color: $corpo-bl
+            margin-top: 22px
+            margin-bottom: 14px
         &__date
+            margin-top: 22px
             display: flex
             align-items: center
+        &__article
+            +txt-sz
     &-button
         width: 300px
         height: 58px
+        +sbttl-sz
         margin-right: auto
         margin-left: auto

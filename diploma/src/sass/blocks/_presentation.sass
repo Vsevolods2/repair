@@ -8,45 +8,39 @@
         flex-wrap: wrap
     &-view
         width: 65%
+        padding-right: 92px
         display: flex
         flex-wrap: wrap
+        justify-content: space-between
     &-card
+        margin: 15px
         display: flex
         flex-direction: column
         align-items: center
+        align-content: space-between
         width: 198px
         height: 168px
         background-color: white
-        margin: 18px
-        // &:before
-        //     content: ''
-        //     width: 34vw
-        //     position: absolute
-        //     height: 100%
-        //     top: 0
-        //     right: 0
-        //     background-color: $sec-bg-cl
-        //     z-index: 3
+        border: 1px solid black
         &__image
-            z-index: 4
             padding-top: 16px
-            padding-bottom: 20px
+            padding-bottom: 15px
         &__text
-            z-index: 4
             vertical-align: middle
             text-align: center
+            font-size: 18px
+            line-height: 23px
     &-list
         margin: 0
         padding: 0
+        width: 35%
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 50px
         &__text
-            +sbttl-sz
+            padding-left: 16px
+            font-size: 20px
             line-height: 25px
-@media (min-width: 992px)
-    .presentation
-        &-list
-            &__text:before
-                content: ''
-                width: 31px
-                height: 2px
-                background-color: $corpo-bl
-        
+            &:before
+                content: '— '
