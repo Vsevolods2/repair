@@ -614,7 +614,7 @@ li {
   .navbar__phone {
     width: 130px;
     font-size: 14px;
-    margin-right: 35px;
+    margin-right: 20px;
   }
   .navbar__phone-image {
     padding-left: 35px;
@@ -894,6 +894,14 @@ li {
   }
   .card:hover .card__label {
     display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 370px;
+    height: 210px;
+    margin-bottom: 20px;
   }
 }
 
