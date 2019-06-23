@@ -1113,6 +1113,10 @@ li {
           align-items: center;
 }
 
+.footer-logos {
+  padding-left: 27px;
+}
+
 .footer-logos__social {
   width: 26px;
   height: 26px;
@@ -1128,7 +1132,7 @@ li {
 .footer-location__marker {
   width: 15px;
   height: 21px;
-  margin-right: 13px;
+  margin-right: 8px;
 }
 
 .footer-location__address {
@@ -1149,9 +1153,8 @@ li {
           align-items: center;
 }
 
-.footer-connection__message {
-  width: 20px;
-  height: 14px;
+.footer-connection__image {
+  padding-right: 10px;
 }
 
 .footer-connection__mail {
@@ -1165,12 +1168,7 @@ li {
   display: inline-block;
   background-color: white;
   opacity: 0.33;
-  margin: 0 20px 0 20px;
-}
-
-.footer-connection__phone {
-  width: 18px;
-  height: 18px;
+  margin: 0 25px 0 24px;
 }
 
 .footer-connection__number {
