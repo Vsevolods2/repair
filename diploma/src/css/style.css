@@ -474,6 +474,25 @@ li {
   }
 }
 
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 87%;
+  }
+}
+
 .navbar {
   padding: 7px 0 8px;
   position: relative;
@@ -557,9 +576,10 @@ li {
 }
 
 .navbar__phone {
+  width: 150px;
   color: #010101;
   font-size: 18px;
-  padding-right: 43px;
+  margin-right: 43px;
 }
 
 .navbar__phone-image {
@@ -584,6 +604,29 @@ li {
   }
   .navbar-source__link:hover::before {
     width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar:after {
+    width: 36%;
+  }
+  .navbar__phone {
+    width: 130px;
+    font-size: 14px;
+    margin-right: 35px;
+  }
+  .navbar__phone-image {
+    padding-left: 35px;
+  }
+  .navbar-info {
+    padding-left: 35px;
+  }
+  .navbar-source__link {
+    margin-right: 0px;
+  }
+  .navbar-source__line {
+    margin: 0 20px 0 20px;
   }
 }
 

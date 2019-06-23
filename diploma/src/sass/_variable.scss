@@ -15,3 +15,16 @@ $corpo-bl: #010101;
     font-size: 18px;
     line-height: 28px;
 }
+
+@mixin ttl-12 {
+    font-size: 35px;
+    line-height: 55px;
+}
+@mixin sbttl-12 {
+    font-size: 20px;
+    line-height: 26px;
+}
+@mixin txt-12 {
+    font-size: 18px;
+    line-height: 28px;
+}

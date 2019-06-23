@@ -47,9 +47,10 @@
         justify-content: space-around
         align-items: center             
     &__phone
+        width: 150px
         color: $corpo-bl
         font-size: 18px
-        padding-right: 43px
+        margin-right: 43px
         &-image
             padding-left: 54px
             padding-right: 6px
@@ -68,4 +69,18 @@
                 width: 100%
 @media (max-width: 1200px)
     .navbar
-        
+        &:after
+            width: 36%
+        &__phone
+            width: 130px
+            font-size: 14px
+            margin-right: 35px
+            &-image
+                padding-left: 35px
+        &-info
+            padding-left: 35px
+        &-source
+            &__link
+                margin-right: 0px
+            &__line
+                margin: 0 20px 0 20px
